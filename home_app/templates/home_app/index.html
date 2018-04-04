@@ -1,0 +1,619 @@
+﻿{% load static %}
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Zhenbang Chen</title>
+<!--
+Newline Template
+http://www.templatemo.com/tm-503-newline
+-->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="{% static 'home_app/apple-touch-icon.png' %}">
+
+        <link rel="stylesheet" href="{% static 'home_app/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'home_app/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'home_app/css/fontAwesome.css' %}">
+        <link rel="stylesheet" href="{% static 'home_app/css/templatemo-style.css' %}">
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+        <script src="{% static 'home_app/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+    </head>
+    <body id="body_id">
+
+        <!--Video background
+        <div class="overlay"></div>
+        <section class="top-part">
+          <video controls autoplay loop>
+            <source src="{% static 'home_app/videos/video.mp4' %}" type="video/mp4">
+            <source src="{% static 'home_app/videos/video.ogg' %}" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        </section>
+        -->
+
+        <!--Image background-->
+        <div class="overlay"></div>
+        <section class="top-part">
+          <img src="{% static 'home_app/images/background_boston.jpeg' %}">
+        </section>
+        <div class="underlay"></div>
+        
+        <section class="cd-hero">
+
+          <div class="cd-slider-nav">
+            <nav>
+              <span class="cd-marker item-1"></span>
+              <ul>
+                <li class="selected"><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/home-icon.png' %}"></div><h6>Welcome</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/work-icon.png' %}"></div><h6>Work</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/education-icon.png' %}"></div><h6>Education</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/projects-icon.png' %}"></div><h6>Artwork</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/idea-icon.png' %}"></div><h6>Projects</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="{% static 'home_app/img/person-icon.png' %}"></div><h6>About</h6></a></li>
+              </ul>
+            </nav> 
+          </div> <!-- .cd-slider-nav -->
+
+          <ul class="cd-hero-slider">
+
+            <!--Slide one-->
+            <li class="selected">
+              <div class="heading">
+                <h1>Welcome</h1>
+                <span>Hello Everyone</span>
+              </div>
+              <div class="cd-full-width first-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content first-content">
+                        <h4>{{ home_title_text }}</h4>
+                        <p>{{ home_body_text }}</p>
+                        <div class="primary-button">
+                          <a href="#">Discover More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+            <!--Slide two original template
+            <li>
+              <div class="heading">
+                <h1>Work</h1>
+                <span>Past Work Experiences</span> 
+              </div>
+              <div class="cd-half-width second-slide">   
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content second-content">
+                        <div class="row">
+                          <div class="col-md-7 left-image">
+                            <img src="{% static 'home_app/img/left-about-image.jpg' %}">
+                          </div>
+                          <div class="col-md-5">
+                            <div class="right-about-text">
+                              <h4>Who we are?</h4>
+                              <p>Fusce neque leo, dapibus sed imperdiet sed, vulputate sed purus. Nam eget justo in nibh facilisis rhoncus. Donec et risus non mauris lobortis convallis. Aliquam id urna quis ante blandit semper.</p>
+                              <div class="primary-button">
+                                <a href="#">Discover More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-7">
+                            <div class="left-about-text">
+                              <h4>What we do?</h4>
+                              <p>Nam aliquam ultrices interdum. Vivamus metus mi, accumsan a tincidunt a, efficitur id felis. Vivamus non nibh malesuada, vestibulum nulla in, iaculis sem. Aenean tincidunt faucibus ipsum, ac aliquet nunc accumsan sed. Nulla sodales nunc sit amet libero egestas, ut interdum ex congue.</p>
+                              <div class="primary-button">
+                                <a href="#">Discover More</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-5 right-image">
+                            <img src="{% static 'home_app/img/right-about-image.jpg' %}">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+            -->
+
+            <!--Slide two-->
+            <li>
+              <div class="heading">
+                <h1>Work</h1>
+                <span>Past Work Experiences</span> 
+              </div>
+              <div class="cd-half-width second-slide">   
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="work_collection"class="content second-content">
+                        <!--Work silde text and images-->
+                        {% for work in work_list %}
+                          {% if work.id|divisibleby:2 %}
+                          <div class="row">
+                              <div class="col-md-6">    <!--Originally "col-md-7"-->
+                                  <div class="left-about-text">
+                                      <h4>{{ work.work_title }}</h4>
+                                      <h5>{{ work.work_date }}</h5>
+                                      <p>{{ work.work_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 right-image">    <!--Originally "col-md-5"-->
+                                  <img src="{% static work.return_image %}">
+                              </div>
+                          </div>
+                          {% else %}
+                          <div class="row">
+                              <div class="col-md-6 left-image">     <!--Originally "col-md-7"-->
+                                  <img src="{% static work.return_image %}">
+                              </div>
+                              <div class="col-md-6">    <!--Originally "col-md-5"-->
+                                  <div class="right-about-text">
+                                      <h4>{{ work.work_title }}</h4>
+                                      <h5>{{ work.work_date }}</h5>
+                                      <p>{{ work.work_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+            <!--Slide three original content template
+            <li>
+              <div class="heading">
+                <h1>Featured</h1>
+                <span>We produce featured product every week</span> 
+              </div>
+              <div class="cd-half-width third-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content third-content">
+                        <div class="row">
+                          <div class="col-md-7 left-image">
+                            <img src="{% static 'home_app/img/left-feature-image.png' %}">
+                          </div>
+                          <div class="col-md-5">
+                            <div class="right-feature-text">
+                              <h4>Featured Product: <em>Newline</em></h4>
+                              <p>Lorem ipsum dolor amet, consecte adipiscing elit, quisque dictum convallis mi. In dapibus auctor dictum donec mattis quis eros ultricies feugiat. Morbi congue faucibus mi, ague blandit curabitur ac lacinia.</p>
+                              <div class="feature-list">
+                                <ul>
+                                  <p>- Suspendisse mattis finibus sem</p>
+                                  <p>- Pellentesque et urna vel lectus</p>
+                                  <p>- Vestibulum iaculis nisi dui</p>
+                                  <p>- Donec sagittis eros , ac tempus ligula</p>
+                                  <p>- Integer sapien risus, auctor</p>
+                                </ul>
+                              </div>
+                              <div class="primary-button">
+                                <a href="#">Discover More</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+            -->
+
+            <!--Slide three-->
+            <li>
+              <div class="heading">
+                <h1>Education</h1>
+                <span>Education and Schools</span> 
+              </div>
+              <div class="cd-half-width second-slide">  <!--Follows second slide css-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content second-content">  <!--Follows second slide css-->
+                        <!--Work silde text and images-->
+                        {% for education in education_list %}
+                          {% if education.id|divisibleby:2 %}
+                          <div class="row">
+                              <div class="col-md-6">    <!--Originally "col-md-7"-->
+                                  <div class="left-about-text">
+                                      <h4>{{ education.education_title }}</h4>
+                                      <h5>{{ education.education_date }}</h5>
+                                      <p>{{ education.education_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 right-image">    <!--Originally "col-md-5"-->
+                                  <img src="{% static education.return_image %}">
+                              </div>
+                          </div>
+                          {% else %}
+                          <div class="row">
+                              <div class="col-md-6 left-image">     <!--Originally "col-md-7"-->
+                                  <img src="{% static education.return_image %}">
+                              </div>
+                              <div class="col-md-6">    <!--Originally "col-md-5"-->
+                                  <div class="right-about-text">
+                                      <h4>{{ education.education_title }}</h4>
+                                      <h5>{{ education.education_date }}</h5>
+                                      <p>{{ education.education_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+            <!--Slide four original template
+            <li>
+              <div class="heading">
+                <h1>Artwork</h1>
+                <span>Blender 3D Models and Renders</span> 
+              </div>
+              <div class="cd-half-width fourth-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content fourth-content">
+                        <div class="row">
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-01.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-01.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-02.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-02.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-03.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-03.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-04.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-04.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-05.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-05.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-06.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-06.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-07.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-07.jpg' %}"></a>
+                          </div>
+                          <div class="col-md-3 project-item">
+                            <a href="{% static 'home_app/img/item-08.jpg' %}" data-lightbox="image-1"><img src="{% static 'home_app/img/project-item-08.jpg' %}"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+            -->
+
+            <!--Slide four-->
+            <li>
+              <div class="heading">
+                <h1>Artwork</h1>
+                <span>Blender 3D Models and Renders</span> 
+              </div>
+              <div class="cd-half-width fourth-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content fourth-content">
+                        <div class="row">
+                        {% for album in album_list %}
+                          <div class="col-md-3 project-item">
+                            <a href="{% static album.return_image %}" data-lightbox="image-1" data-title="{{ album.album_title }}"><img src="{% static album.return_png_preview %}"></a>
+                          </div>
+                        {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+            <!--Slide 5 original template
+            <li>
+              <div class="heading">
+                <h1>Contact us</h1>
+                <span>You'll be responded within 48 hrs</span> 
+              </div>
+              <div class="cd-half-width fivth-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content fivth-content">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="left-info">
+                              <p>Maecenas imperdiet sagittis lacus, ut consequat velit iaculis id. Praesent eu consequat urna. Morbi justo dolor, ornare sed lorem et, auctor iaculis ligula.
+                              <br><br>
+                              <em>3344 Donec mollis libero<br>at metus luctus 10110</em>
+                              </p>
+                              <ul class="social-icons">
+                                <i><a href="#"><i class="fa fa-facebook"></i></a></i>
+                                <i><a href="#"><i class="fa fa-twitter"></i></a></i>
+                                <i><a href="#"><i class="fa fa-linkedin"></i></a></i>
+                                <i><a href="#"><i class="fa fa-rss"></i></a></i>
+                                <i><a href="#"><i class="fa fa-behance"></i></a></i>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="row">
+                              <form id="contact" action="" method="post">
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                  </fieldset>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+            -->
+
+            <!--Slide five-->
+            <li>
+              <div class="heading">
+                <h1>Projects</h1>
+                <span>Development and Design</span> 
+              </div>
+              <div class="cd-half-width second-slide">  <!--Follows second slide css-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content second-content">  <!--Follows second slide css-->
+                        <!--Work silde text and images-->
+                        {% for project in project_list %}
+                          {% if project.id|divisibleby:2 %}
+                          <div class="row">
+                              <div class="col-md-6">    <!--Originally "col-md-7"-->
+                                  <div class="left-about-text">
+                                      <h4>{{ project.project_title }}</h4>
+                                      <h5>{{ project.project_year }}</h5>
+                                      <p>{{ project.project_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6 right-image">    <!--Originally "col-md-5"-->
+                                  <a href="{% url 'projects:project_view' project.project_title %}"><img src="{% static project.return_image %}"></a>
+                              </div>
+                          </div>
+                          {% else %}
+                          <div class="row">
+                              <div class="col-md-6 left-image">     <!--Originally "col-md-7"-->
+                                  <a href="{% url 'projects:project_view' project.project_title %}"><img src="{% static project.return_image %}"></a>
+                              </div>
+                              <div class="col-md-6">    <!--Originally "col-md-5"-->
+                                  <div class="right-about-text">
+                                      <h4>{{ project.project_title }}</h4>
+                                      <h5>{{ project.project_year }}</h5>
+                                      <p>{{ project.project_text }}</p>
+                                      <div class="primary-button">
+                                          <a href="#">Discover More</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          {% endif %}
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+
+            <!--Slide 6-->
+            <li>
+              <div class="heading">
+                <h1>About</h1>
+                <span>Info and Contact</span> 
+              </div>
+              <div class="cd-half-width fivth-slide">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content fivth-content">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <div class="left-info">
+                              <p>Maecenas imperdiet sagittis lacus, ut consequat velit iaculis id. Praesent eu consequat urna. Morbi justo dolor, ornare sed lorem et, auctor iaculis ligula.
+                              <br><br>
+                              <em>3344 Donec mollis libero<br>at metus luctus 10110</em>
+                              </p>
+                              <ul class="social-icons">
+                                <i><a href="#"><i class="fa fa-facebook"></i></a></i>
+                                <i><a href="#"><i class="fa fa-twitter"></i></a></i>
+                                <i><a href="#"><i class="fa fa-linkedin"></i></a></i>
+                                <i><a href="#"><i class="fa fa-rss"></i></a></i>
+                                <i><a href="#"><i class="fa fa-behance"></i></a></i>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="row">
+                              <form id="contact" action="" method="post">
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                  <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
+                                  </fieldset>
+                                </div>
+                                <div class="col-md-12">
+                                  <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
+                                  </fieldset>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </li>
+          </ul> <!-- .cd-hero-slider -->
+        </section> <!-- .cd-hero -->
+
+
+        <footer>
+          <p>Copyright &copy; Zhenbang Chen
+                                
+        	<!--| Designed by <a href="http://www.templatemo.com" target="_parent"><em>templatemo</em></a>--></p>
+        </footer>
+
+        <script>
+
+            document.getElementById("body_id").onresize = function() {Restack()};
+
+            function Restack() {
+                if (window.innerWidth < 1025) {
+                    document.getElementById("work_collection").innerHTML =
+                        "{% for work in work_list %}" +
+                        "<div class='row'>" +
+                        "<div class='col-md-6 left-image'>" +
+                        "<img src= '{% static work.return_image %}'>" +
+                        "</div>" +
+                        "<div class='col-md-6'>" +
+                        "<div class='right-about-text'>" +
+                        "<h4>{{ work.work_title }}</h4>" +
+                        "<h5>{{ work.work_date }}</h5>" +
+                        "<p>{{ work.work_text }}</p>" +
+                        "<div class='primary-button'>" +
+                        "<a href='#'>Discover More</a>" +
+                        "<div><p><br /></p></div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "{% endfor %}";
+
+                } else {
+                    document.getElementById("work_collection").innerHTML =
+                        "{% for work in work_list %}" +
+                        "{% if work.id|divisibleby:2 %}" +
+                        "<div class='row'>" +
+                        "<div class='col-md-6'>" +
+                        "<div class='left-about-text'>" +
+                        "<h4>{{ work.work_title }}</h4>" +
+                        "<h5>{{ work.work_date }}</h5>" +
+                        "<p>{{ work.work_text }}</p>" +
+                        "<div class='primary-button'>" +
+                        "<a href='#'>Discover More</a>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "<div class='col-md-6 right-image'>" +
+                        "<img src='{% static work.return_image %}'>" +
+                        "</div>" +
+                        "</div>" +
+                        "{% else %}" +
+                        "<div class='row'>" +
+                        "<div class='col-md-6 left-image'>" +
+                        "<img src='{% static work.return_image %}'>" +
+                        "</div>" +
+                        "<div class='col-md-6'>" +
+                        "<div class='right-about-text'>" +
+                        "<h4>{{ work.work_title }}</h4>" +
+                        "<h5>{{ work.work_date }}</h5>" +
+                        "<p>{{ work.work_text }}</p>" +
+                        "<div class='primary-button'>" +
+                        "<a href='#'>Discover More</a>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "{% endif %}" +
+                        "{% endfor %}";
+                }
+            }
+        </script>
+
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="{% static 'home_app/js/vendor/bootstrap.min.js' %}"></script>
+        <script src="{% static 'home_app/js/plugins.js' %}"></script>
+        <script src="{% static 'home_app/js/main.js' %}"></script>
+
+    </body>
+</html>

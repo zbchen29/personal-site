@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\home_app",
+    "\\home_app\\static",
+    "\\home_app\\static\\home_app",
+    "\\home_app\\static\\home_app\\css",
+    "\\home_app\\static\\home_app\\js",
+    "\\home_app\\templates",
+    "\\home_app\\templates\\home_app",
+    "\\projects",
+    "\\projects\\static"
+  ],
+  "SelectedNode": "\\home_app\\static\\home_app\\js\\main.js",
+  "PreviewInSolutionExplorer": false
+}
